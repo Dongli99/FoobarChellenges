@@ -39,39 +39,23 @@ will always be hidden in the first sublist that sums up to the key, so solution(
 only return that sublist.
 """
 def solution(l, t):
-    res = l
-    for i in range(len(l)-1):
-        s = l[i]
-        tmp = [i]
-        
-        if s == t:
-            res = [i]
-            return res
-        elif s > t:
-            continue
-        
-        if i <= len(l)-2:
-            j = i + 1            
-        else:
-            continue
-        
-        while s < t:
-            s += l[j]
-            if s <= t:
-                tmp.append(j)
-            else:
-                break
-            if s == t and len(tmp) < len(res):
-                res = tmp
-                break
-            if j <= len(l)-2:
-                j += 1
-        
-    if len(res) == len(l):
-        return [-1, -1]
-    else:
-        return [res[0], res[-1]]
+    start = 0
+    end = 0
+    current_sum = 0
+
+    for i in range(len(l)):
+        current_sum += l[i]
+
+        while current_sum > t:
+            current_sum -= l[start]
+            start += 1
+
+        if current_sum == t:
+            end = i
+            return [start, end]
+
+    return [-1, -1]
     
-result = solution([4, 3, 10, 2, 8], 17)
+result = solution([4, 3, 10, 2, 15, 8], 17)
 print(result)
     

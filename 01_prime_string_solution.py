@@ -20,5 +20,4 @@ def Prime_String(n):
     combined_string = ''.join(str(num) for num in nums) 
     return combined_string
     
-primes = Prime_String(10000)
-print(len(primes))
+primes = Prime_String(20231)

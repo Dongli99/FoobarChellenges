@@ -1,6 +1,6 @@
 # Previous Story
 
-When finishing Google Analytics Certificate, the author accidently opened a hidden world and traped by the geeks. 
+When finishing Google Analytics Certificate, the author bonusly opened a [hidden world](https://foobar.withgoogle.com/) and traped by the geeks. 
 There are lots of interesting challenges to solve before I was rescued.
 
 # Challenges

@@ -61,18 +61,17 @@ def solution(l, t):
                 tmp.append(j)
             else:
                 break
-            if s == t & len(tmp) < len(res):
+            if s == t and len(tmp) < len(res):
                 res = tmp
                 break
             if j <= len(l)-2:
                 j += 1
-
         
     if len(res) == len(l):
-        return (-1, -1)
+        return [-1, -1]
     else:
-        return res
+        return [res[0], res[-1]]
     
-result = solution([4, 3, 10, 2, 8], 15)
+result = solution([4, 3, 10, 2, 8], 17)
 print(result)
     

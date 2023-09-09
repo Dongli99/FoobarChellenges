@@ -4,9 +4,9 @@ Created on Fri Sep  8 21:51:37 2023
 
 @author: Dongli
 """
-
-def Prime_String(n):
-    nums = [i for i in range(2, n+1)]
+def Solution(i):
+    # filter prime number with Sieve of Eratosthenes
+    nums = [i for i in range(2, 20232)]
     i = 0
     while i < len(nums):
         f = nums[i]
@@ -17,7 +17,11 @@ def Prime_String(n):
             else:
                 j+=1
         i+=1
-    combined_string = ''.join(str(num) for num in nums) 
-    return combined_string
+    prime_string = ''.join(str(num) for num in nums)
     
-primes = Prime_String(20231)
+    # find code for i
+    return prime_string[i, i+5]
+
+    
+    
+    

@@ -2,6 +2,7 @@
 
 When finishing Google Analytics Certificate, the author bonusly opened a [hidden world](https://foobar.withgoogle.com/) and traped by the geeks. 
 There are lots of interesting challenges to solve before I was rescued.
+*Too busy. Will be back when got a chance.*
 
 # Challenges
 
